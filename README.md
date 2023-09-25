@@ -34,7 +34,7 @@ To install dependencies, run the command bellow :
 To crawl over all products, run the command bellow:
 
 ```bash
-  scrapy crawl products -o nissin.json
+  scrapy crawl products
 ```
 
 
