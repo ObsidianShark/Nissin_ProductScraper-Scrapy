@@ -17,8 +17,7 @@ Python 3.10+
 To clone the repository, type the code below in a shell :
 
 ```bash
-  git clone https://github.com/ObsidianShark/Nissin_ProductScraper-Scrapy.git
-  cd nissin
+  git clone https://github.com/ObsidianShark/Nissin_ProductScraper-Scrapy.git 
 ```
 
 To install dependencies, run the command bellow :
