@@ -17,10 +17,14 @@ class ProductsSpider(SitemapSpider):
         "AUTOTHROTTLE_ENABLED": True,
         "AUTOTHROTTLE_DEBUG": True,
         # 'HTTPCACHE_ENABLED': True,
+        "FEEDS": {
+            f"{name}.json": {"format": "json"},
+        },
     }
 
     def parse_product(self, response):
         product = ProductLoader(item=ProductItem(), selector=response)
+        
         product.add_xpath(
             "product_name", "//h1[contains(@class, 'single-product__title')]/text()"
         )
